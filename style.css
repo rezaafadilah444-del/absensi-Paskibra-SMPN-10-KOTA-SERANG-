@@ -1,0 +1,319 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #f1f5f9;
+    color: #1e293b;
+}
+
+
+/* =========================
+   PAGE
+========================= */
+
+.page {
+    display: none;
+    min-height: 100vh;
+}
+
+.page.active {
+    display: block;
+}
+
+
+/* =========================
+   LOGIN
+========================= */
+
+#loginPage {
+    display: none;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    background:
+        linear-gradient(
+            135deg,
+            #991b1b,
+            #1e3a8a
+        );
+}
+
+#loginPage.active {
+    display: flex;
+}
+
+.login-box {
+    width: 100%;
+    max-width: 400px;
+    background: white;
+    padding: 30px;
+    border-radius: 20px;
+    text-align: center;
+    box-shadow:
+        0 15px 40px
+        rgba(0,0,0,0.25);
+}
+
+.logo {
+    font-size: 60px;
+}
+
+.login-box h1 {
+    font-size: 24px;
+    margin: 10px 0;
+}
+
+.login-box p {
+    color: #64748b;
+}
+
+
+input,
+select {
+    width: 100%;
+    padding: 14px;
+    margin-top: 10px;
+    border: 1px solid #cbd5e1;
+    border-radius: 10px;
+    font-size: 15px;
+    background: white;
+}
+
+
+input:focus,
+select:focus {
+    outline: none;
+    border-color: #2563eb;
+}
+
+
+/* =========================
+   BUTTON
+========================= */
+
+button {
+    cursor: pointer;
+    border: none;
+}
+
+.btn-primary {
+    width: 100%;
+    margin-top: 15px;
+    padding: 14px;
+    border-radius: 10px;
+    background: #2563eb;
+    color: white;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.btn-primary:active {
+    transform: scale(0.98);
+}
+
+.error {
+    color: #dc2626 !important;
+}
+
+.message {
+    font-weight: bold;
+}
+
+
+/* =========================
+   HEADER
+========================= */
+
+header {
+    background:
+        linear-gradient(
+            135deg,
+            #991b1b,
+            #1e3a8a
+        );
+
+    color: white;
+
+    padding: 18px 20px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content:
+        space-between;
+}
+
+header h1 {
+    margin: 0;
+}
+
+header p {
+    margin: 5px 0 0;
+}
+
+
+/* =========================
+   LOGOUT
+========================= */
+
+.logout {
+    padding: 10px 15px;
+    border-radius: 8px;
+    background: rgba(255,255,255,0.2);
+    color: white;
+}
+
+
+/* =========================
+   MAIN
+========================= */
+
+main {
+    max-width: 800px;
+    margin: auto;
+    padding: 20px;
+}
+
+
+/* =========================
+   CARD
+========================= */
+
+.card {
+    background: white;
+    padding: 22px;
+    margin-bottom: 20px;
+    border-radius: 15px;
+    box-shadow:
+        0 5px 18px
+        rgba(0,0,0,0.07);
+}
+
+.card h2 {
+    margin-top: 0;
+}
+
+.info {
+    color: #64748b;
+}
+
+
+/* =========================
+   LIST HEADER
+========================= */
+
+.list-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.list-header h2 {
+    margin-bottom: 5px;
+}
+
+.list-header p {
+    margin-top: 0;
+    color: #64748b;
+}
+
+
+/* =========================
+   RESET
+========================= */
+
+.reset {
+    padding: 9px 13px;
+    border-radius: 8px;
+    background: #ef4444;
+    color: white;
+}
+
+
+/* =========================
+   DAFTAR HADIR
+========================= */
+
+.attendance-item {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+
+    padding: 14px 0;
+
+    border-bottom:
+        1px solid #e2e8f0;
+}
+
+.nomor {
+    width: 35px;
+    height: 35px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 50%;
+
+    background: #2563eb;
+    color: white;
+
+    font-weight: bold;
+}
+
+.attendance-info {
+    flex: 1;
+}
+
+.attendance-info strong {
+    display: block;
+}
+
+.attendance-info small {
+    color: #64748b;
+}
+
+.status {
+    color: #16a34a;
+    font-size: 13px;
+    font-weight: bold;
+}
+
+.empty {
+    text-align: center;
+    color: #64748b;
+    padding: 30px 10px;
+}
+
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 500px) {
+
+    header {
+        padding: 15px;
+    }
+
+    header h1 {
+        font-size: 20px;
+    }
+
+    main {
+        padding: 12px;
+    }
+
+    .card {
+        padding: 18px;
+    }
+
+    .attendance-item {
+        align-items: flex-start;
+    }
+
+}
